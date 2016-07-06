@@ -2,7 +2,7 @@
 
 > DEMO: http://little-league.in.modxcloud.com/
 
-### Features
+### Free Features
 
 1. Registration for League with Extended Fields
 2. News Post Page
@@ -20,6 +20,13 @@
 2. Next Year Registration plan would be look up user and update `activeYear` and Apparel Sizes
 3. Mark user `PAID`
 
+### Features you can pay MODX for
+
+1. Dynamic Schedules, not manual tables
+2. Team Roster builder, not manual pages
+3. Login portal so players can update their info each year.
+4. Payment Integration into Registration
+5. Full Blog Features
 
 ---
 
