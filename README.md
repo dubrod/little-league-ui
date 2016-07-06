@@ -26,4 +26,4 @@
 
 ### MODX Theme Documentation
 
-[MODX.md](modx.md)
+[MODX.md](MODX.md)
