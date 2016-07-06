@@ -42,6 +42,8 @@
 
 Here you can change your League Info and some color options
 
+![theme](little-league-config.png)
+
 #### Footer Links
 
 The Footer Sections and Links are already setup in the Resource Tree. You can edit, create, and delete to dynamically add new items.
