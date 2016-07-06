@@ -1,0 +1,62 @@
+// Layout Utilities
+
+.inline       { display: inline; }
+.block        { display: block; }
+.inline-block { display: inline-block; }
+
+.oh    { overflow: hidden; }
+.left  { float: left; }
+.right { float: right; }
+
+.clearfix {
+  &:before, &:after { content: " "; display: table; }
+  &:after { clear: both; }
+}
+
+.fit { max-width: 100%; }
+
+// Wrapper for horizontally centering elements with a fixed width
+// Use .wrap in conjunction with the .measure classes to center columns
+.wrap { margin-right: auto; margin-left: auto; }
+
+//mobile explicit
+.mobile-show, .tablet-show {
+  display: none;
+}
+
+@include respond-to($tabletP){
+  .tablet-show,
+  .tablet-block {
+    display: block !important;
+  }
+  .tablet-block {
+    width: 100% !important;
+  }
+  .tablet-hide {
+    display: none;
+  }
+  .tablet-base{
+	  margin: 1rem !important;
+	  padding: 1rem !important;
+  }
+}
+
+@include respond-to($mobile){
+  .mobile-show,
+  .mobile-block {
+    display: block !important;
+  }
+  .mobile-block {
+    width: 100% !important;
+  }
+  .mobile-hide {
+    display: none;
+  }
+  .mobile-center {
+    text-align: center;
+  }
+  .mobile-base{
+	  margin: 1rem !important;
+	  padding: 1rem !important;
+  }
+}

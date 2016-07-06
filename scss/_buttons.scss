@@ -1,0 +1,88 @@
+// Buttons
+
+.button {
+  border-radius: $radius;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+  transition-property: box-shadow , background-color;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  appearance: none;
+  white-space: nowrap;
+  display: inline-block;
+  line-height: 2rem;
+  height: auto;
+  min-height: 2rem;
+  padding: .5rem 1rem;
+
+  &:hover{text-decoration:none;}
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.button-big { padding: 1rem 1.5rem; }
+
+.button-small { padding: 0 1rem; }
+
+//button colors
+.button-primary {
+  color: $white;
+  background-color: $primary;
+  &:hover {
+    color: $white;
+    background-color: darken($primary, 8%);
+  }
+}
+
+.button-secondary {
+  color: $white;
+  background-color: $secondary;
+  &:hover {
+    color: $white;
+    background-color: darken($secondary, 10%);
+  }
+}
+
+.button-blue{
+  color: $white;
+  background-color: $blue;
+  &:hover {
+    color: $white;
+    background-color: darken($blue, 10%);
+  }
+}
+
+.button-red, .button-danger {
+  color: $white;
+  background-color: $red;
+  &:hover {
+    color: $white;
+    background-color: darken($red, 10%);
+  }
+}
+
+.button-gray, button:disabled, input:disabled {
+  color: $white;
+  background-color: $mid-gray;
+  &:hover {
+    color: $white;
+    background-color: darken($mid-gray, 20%);
+  }
+  &:focus {}
+}
+
+button:disabled, input:disabled {cursor: not-allowed;}
+
+.button-dark {
+  color: $white;
+  background-color: $dark-gray;
+  &:hover {
+    color: $white;
+    background-color: darken($dark-gray, 20%);
+  }
+  &:focus {}
+}

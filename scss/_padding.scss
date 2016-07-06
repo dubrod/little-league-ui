@@ -1,0 +1,30 @@
+// Padding
+
+.quarter  { padding: .25rem; }
+.phalf  { padding: .5rem; }
+.p1  { padding: 1rem; }
+.px1 { padding-right: 1rem; padding-left: 1rem; }
+.py1 { padding-top: 1rem; padding-bottom: 1rem; }
+
+.p2  { padding: 2rem; }
+.px2 { padding-right: 2rem; padding-left: 2rem; }
+.py2 { padding-top: 2rem; padding-bottom: 2rem; }
+
+
+// Responsive padding
+
+.p-responsive { padding: 3rem; }
+.px-responsive { padding-right: 3rem; padding-left: 3rem; }
+.py-responsive { padding-top: 3rem; padding-bottom: 3rem; }
+
+@include respond-to($tabletL){
+  .p-responsive { padding: 2.5rem; }
+  .px-responsive { padding-right: 2.5rem; padding-left: 2.5rem; }
+  .py-responsive { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+}
+
+@include respond-to($mobile){
+.p-responsive { padding: 1.5rem; }
+.px-responsive { padding-right: 1.5rem; padding-left: 1.5rem; }
+.py-responsive { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+}

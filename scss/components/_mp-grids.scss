@@ -1,0 +1,74 @@
+//Multi-Purpose Grid
+
+.mp-grid{
+	@extend .clearfix;
+
+	.mp-2{
+		width: 48.8%;
+		float: left;
+		margin-left: 1.2%;
+		margin-right: 1.2%;
+		margin-bottom: 1.2%;
+
+		&:nth-child(2n+1){margin-left: 0;clear:left;}
+		&:nth-child(2n+0){margin-right: 0;}
+
+		@include respond-to($mobile){
+			width: 100%;
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
+
+	.mp-3{
+		width: 31.719%;
+		float: left;
+		margin-left: 1.2%;
+		margin-right: 1.2%;
+		margin-bottom: 1.2%;
+
+		&:nth-child(3n+1){margin-left: 0;clear:left;}
+		&:nth-child(3n+0){margin-right: 0;}
+
+		@include respond-to($mobile){
+			width: 100%;
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
+
+	.mp-4{
+		width: 23.2%;
+		float: left;
+		margin-left: 1.2%;
+		margin-right: 1.2%;
+		margin-bottom: 1.2%;
+
+		&:nth-child(4n+1){margin-left: 0;clear:left;}
+		&:nth-child(4n+0){margin-right: 0;}
+
+		@include respond-to($mobile){
+			width: 100%;
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
+
+	.mp-5{
+		width: 17.99%;
+		float: left;
+		margin-left: 1.25%;
+		margin-right: 1.25%;
+		margin-bottom: 1.25%;
+
+		&:nth-child(5n+1){margin-left: 0;clear:left;}
+		&:nth-child(5n+0){margin-right: 0;}
+
+		@include respond-to($mobile){
+			width: 100%;
+			margin-right: 0;
+			margin-left: 0;
+		}
+
+	}
+}

@@ -1,0 +1,27 @@
+//Breakpoints
+
+$oldmobile: 480px;
+$mobile: 768px;
+$tabletP: 960px;
+$tabletL: 1024px;
+$desktop: 1120px;
+
+.measure-narrow { width: $mobile; max-width:100%;}
+.measure-wide { width: $desktop; max-width:100%;}
+
+//master mixin
+//can be used with specific px/em value or $var
+
+@mixin respond-to($breakpoint){
+	@media only screen and (max-width: $breakpoint) { @content; }
+}
+
+@mixin respond-to-above($breakpoint){
+	@media only screen and (min-width: $breakpoint) { @content; }
+}
+
+//sometimes inside measure-wide content on left hits the edge
+
+@media only screen and (max-width: $desktop) and (min-width: 961px){
+
+}

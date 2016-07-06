@@ -1,0 +1,48 @@
+header{
+	@extend .clearfix;
+
+	.flex--nav{
+		li{
+			list-style:none;
+			&:hover{
+				a{
+					background-color: darken($primary, 10%);
+					color: $white;
+					text-decoration:none;
+				}
+			}
+			a{
+				@include fade-ease;
+				display:block;
+				text-align:center;
+				color: $light-gray;
+				padding: 1rem;
+				border-right: 1px solid #000;
+				border-left: 1px solid lighten($black,15%);
+
+				i{
+					color: darken($light-gray, 25%);
+				}
+			}
+			&:first-of-type{
+				a{border-left:none;}
+			}
+			&:last-of-type{
+				a{border-right:none;}
+			}
+		}
+	}
+
+	#mobileButton{
+		display:none;
+		width:100%;
+		background-color: $primary;
+		padding: .5rem;
+		color: $white;
+	}
+
+	@include respond-to($mobile){
+		#mobileButton{display:block;}
+		.flex--nav{display:none;}
+	}
+}

@@ -1,0 +1,184 @@
+
+<!DOCTYPE html >
+<html>
+<head>
+
+  <meta charset='UTF-8'/>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+  <meta name='robots' content='index'/>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <title>Style Guide | Margins</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+  <link href='css/base.css' rel='stylesheet' />
+  <link href='../css/app.css' rel='stylesheet' />
+
+</head>
+<body class=' full'>
+<div class='page-content'>
+
+<div class='sg-header clearfix'>
+  <div class='limiter clearfix'>
+    <nav class='col12 text-right pad2y contain clearfix'>
+      <h4 class='main-title'>Style Guide</h4>
+      <div id='nav'>
+          <div class="z10 strong small pad0y">
+              <a href="index.html" class="primary-nav-button inline pad1x pad0y rounded">Base</a>
+              <a href="components.html" class="primary-nav-button inline pad1x pad0y rounded active">Components</a>
+              <a href="js.html" class="primary-nav-button inline pad1x pad0y rounded">JS</a>
+          </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<div class=''>
+
+<!--Fixed sidebar navigation-->
+<div class='docnav hide-mobile'>
+  <div class='limiter'><div class='col3 contain'>
+    <nav class='scroll-styled quiet-scroll'>
+      <div class='space-bottom'>
+        <h4 style="text-align:left;">Components</h4>
+      </div>
+
+      <div class='space-bottom1'>
+
+          <a href='components.html'>Grids</a>
+          <a href='nav.html'>Nav</a>
+          <a href='layout.html'>Layout</a>
+          <a href='margins.html' class='active'>Margins</a>
+          <a href='padding.html'>Padding</a>
+          <a href='utilities.html'>Utilities</a>
+          <a href='flexbox.html'>Flex Box</a>
+
+      </div>
+    </nav>
+  </div></div>
+</div>
+
+<div class='limiter clearfix'>
+  <div class='pad2y'>
+    <nav class='contain z10 margin3 col9 fill-dark space-bottom rounded'>
+      <div class='col2 pad2'>
+        <strong>Margins</strong>
+      </div>
+    </nav>
+  </div>
+  <div class='contain margin3 col9'>
+    <div class='doc'>
+
+
+        <div class='box round'>
+            <div class='box-heading pad2'>
+              <h3 class=''>Modular Margins</h3>
+              <p></p>
+            </div>
+
+            <div class='round-bottom'>
+                <div class="highlight">
+                    <pre><code class="language-html" data-lang="html">
+                        .m0  { margin: 0; }
+                        .mb0 { margin-bottom: 0; }
+
+                        .m1  { margin: 1rem; }
+                        .mt1 { margin-top: 1rem; }
+                        .mr1 { margin-right: 1rem; }
+                        .mb1 { margin-bottom: 1rem; }
+                        .ml1 { margin-left: 1rem; }
+
+                        .m2  { margin: 2rem; }
+                        .mt2 { margin-top: 2rem; }
+                        .mr2 { margin-right: 2rem; }
+                        .mb2 { margin-bottom: 2rem; }
+                        .ml2 { margin-left: 2rem; }
+
+
+                  </code></pre>
+              </div>
+          </div>
+        </div>
+
+
+        <div class='box round'>
+            <div class='box-heading pad2'>
+              <h3 class=''>Responsive Margins</h3>
+              <p></p>
+            </div>
+
+
+                <section class="m-responsive">
+                    <div class="p-responsive bg-primary">.m-responsive > .p-responsive</div>
+                </section>
+
+
+            <div class='round-bottom'>
+                <div class="highlight">
+                    <pre><code class="language-html" data-lang="html">
+                        .m-responsive { margin: 3rem; }
+                        .mt-responsive { margin-top: 3rem; }
+                        .mr-responsive { margin-right: 3rem; }
+                        .mb-responsive { margin-bottom: 3rem; }
+                        .ml-responsive { margin-left: 3rem; }
+
+                        @include respond-to($tabletL){
+                          .m-responsive { margin: 2.5rem; }
+                          .mt-responsive { margin-top: 2.5rem; }
+                          .mr-responsive { margin-right: 2.5rem; }
+                          .mb-responsive { margin-bottom: 2.5rem; }
+                          .ml-responsive { margin-left: 2.5rem; }
+                        }
+
+                        @include respond-to($mobile){
+                        	.m-responsive { margin: 2rem; }
+                        	.mt-responsive { margin-top: 2rem; }
+                        	.mr-responsive { margin-right: 2rem; }
+                        	.mb-responsive { margin-bottom: 2rem; }
+                        	.ml-responsive { margin-left: 2rem; }
+                        }
+                  </code></pre>
+              </div>
+          </div>
+        </div>
+
+
+        <div class='box round'>
+            <div class='box-heading pad2'>
+              <h3 class=''>Mobile Base</h3>
+              <p>Class to force mobile friendly gutter.<br>
+              .mobile-base, .tablet-base</p>
+            </div>
+            <div class='pad2'>
+
+                <section class="clearfix mobile-base">
+                    <div class="gutter bg-primary">.mobile-base</div>
+                </section>
+
+            </div>
+            <div class='round-bottom'>
+                <div class="highlight">
+                    <pre><code class="language-html" data-lang="html">
+        <span class="nt">.mobile-base{</span>
+           margin: 1rem !important;
+             padding: 1rem !important;
+        <span class="nt">}</span>
+                  </code></pre>
+              </div>
+          </div>
+        </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+</div>
+</body>
+</html>

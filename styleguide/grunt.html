@@ -1,0 +1,142 @@
+
+<!DOCTYPE html >
+<html>
+<head>
+
+  <meta charset='UTF-8'/>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+  <meta name='robots' content='index'/>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <title>Style Guide | Grunt</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+  <link href='css/base.css' rel='stylesheet' />
+  <link href='../css/app.css' rel='stylesheet' />
+
+</head>
+<body class=' full'>
+<div class='page-content'>
+
+<div class='sg-header clearfix'>
+  <div class='limiter clearfix'>
+    <nav class='col12 text-right pad2y contain clearfix'>
+      <h4 class='main-title'>Style Guide</h4>
+      <div id='nav'>
+          <div class="z10 strong small pad0y">
+              <a href="index.html" class="primary-nav-button inline pad1x pad0y rounded">Base</a>
+              <a href="components.html" class="primary-nav-button inline pad1x pad0y rounded">Components</a>
+              <a href="js.html" class="primary-nav-button inline pad1x pad0y rounded active">JS</a>
+          </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<div class=''>
+
+<!--Fixed sidebar navigation-->
+<div class='docnav hide-mobile'>
+  <div class='limiter'><div class='col3 contain'>
+    <nav class='scroll-styled quiet-scroll'>
+      <div class='space-bottom'>
+        <h4 style="text-align:left;">Javascript</h4>
+      </div>
+
+      <div class='space-bottom1'>
+
+          <a href='js.html'>Index</a>
+          <a href='jquery.html'>jQuery</a>
+          <a href='grunt.html' class='active'>Grunt</a>
+
+      </div>
+    </nav>
+  </div></div>
+</div>
+
+<div class='limiter clearfix'>
+  <div class='pad2y'>
+    <nav class='contain z10 margin3 col9 fill-dark space-bottom rounded'>
+      <div class='col2 pad2'>
+        <strong>Grunt</strong>
+      </div>
+    </nav>
+  </div>
+  <div class='contain margin3 col9'>
+    <div class='doc'>
+
+
+      <div class='box round'>
+          <div class='box-heading pad2'>
+            <h3 class=''>watch</h3>
+            <p></p>
+          </div>
+
+            <div class="pad2">
+                <p>
+                    Watch /scss for save then:<br>
+                    <em>compile Sass > Combine Media Queries > Auto Prefix > Minify to css/app.min.css</em>
+                    <br><br>
+                    Watch /js for save then:<br>
+                    <em>concat > minify to js/app.min.js</em>
+                </p>
+            </div>
+            <div class='round-bottom'>
+                <div class="highlight">
+<pre><code class="language-html" data-lang="html"><span class="nt">
+    grunt watch
+</span>
+</code></pre>
+                </div>
+            </div>
+      </div>
+
+
+
+      <div class='box round'>
+          <div class='box-heading pad2'>
+            <h3 class=''>sftp</h3>
+            <p>sftp-secret.json must be filled out<br>
+            uploads mirror /assets/app/...</p>
+          </div>
+
+            <div class="pad2">
+                <p>
+                    sftp:css<br>
+                    <em>Line 199: upload css folder</em>
+                    <br><br>
+                    sftp:js<br>
+                    <em>Line 212: upload js folder</em>
+                    <br><br>
+                    sftp:img<br>
+                    <em>Line 225: upload img folder</em>
+                </p>
+            </div>
+            <div class='round-bottom'>
+                <div class="highlight">
+      <pre><code class="language-html" data-lang="html"><span class="nt">
+    grunt sftp:css
+    grunt sftp:js
+    grunt sftp:img</span>
+      </code></pre>
+                </div>
+            </div>
+      </div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+</div>
+</body>
+</html>

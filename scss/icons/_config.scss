@@ -1,0 +1,44 @@
+@mixin icon-default(){
+    display: inline-block;
+    text-align:center;
+    position: relative;
+    vertical-align: middle;
+}
+
+button .icon svg, button .icon-small svg{top: 45%;}
+
+.icon{
+    @include icon-default();
+    width: 30px;
+    height: 30px;
+    svg{ width: 25px; height: 25px; position: absolute; top: 50%; left:2.25px; transform: translateY(-50%);}
+}
+
+.icon-small{
+    @include icon-default();
+    width: 20px;
+    height: 20px;
+    svg{ width: 15px; height: 15px; position: absolute; top: 50%; left:2.25px; transform: translateY(-50%);}
+}
+
+.icon-big{
+    @include icon-default();
+    width: 40px;
+    height: 40px;
+    svg{ width: 35px; height: 35px; position: absolute; top: 50%; left:3px; transform: translateY(-50%);}
+}
+
+.icon-huge{
+    @include icon-default();
+    width: 50px;
+    height: 50px;
+    svg{ width: 45px; height: 45px; position: absolute; top: 50%; left:3px; transform: translateY(-50%);}
+}
+
+.icon-bg{ border-radius: .5rem; background-color: $almost-white; }
+.icon-primary{ fill: $primary;}
+.icon-secondary{ fill: $secondary;}
+.icon-blue{ fill: $blue;}
+.icon-white{ fill: $white;}
+.icon-facebook{ fill: #3b5998; }
+.icon-twitter{ fill: #55acee; }

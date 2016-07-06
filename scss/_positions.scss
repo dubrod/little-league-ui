@@ -1,0 +1,35 @@
+// Positioning Utilities
+
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed    { position: fixed; }
+
+.t0 { top: 0; }
+.r0 { right: 0; }
+.b0 { bottom: 0; }
+.l0 { left: 0; }
+
+.z9	{z-index: 99999;}
+.z8	{z-index: 8000;}
+.z7	{z-index: 7000;}
+.z6	{z-index: 6000;}
+.z5	{z-index: 5000;}
+.z4	{z-index: 4000;}
+.z3	{z-index: 3000;}
+.z2	{z-index: 2000;}
+.z1	{z-index: 1000;}
+.z0	{z-index: 100;}
+
+
+.absolute-center {
+  top: 0; right: 0; bottom: 0; left: 0;
+  margin: auto;
+  display: table;
+}
+
+.vertical-center{
+    //parent must be relative
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}

@@ -1,0 +1,41 @@
+// CONTAINER December 2013 - http://www.w3counter.com/globalstats.php
+
+/* 1600x900   4.09%  */
+.container{
+    margin: 0 auto;
+    padding:0;
+    height:auto;
+    width:1410px; 
+}
+
+.three-col-fixed{width: 470px;} /* 3 Columns would be 470px */
+
+/* 1440x900 	5.26%  */
+@media (max-width: 1440px){ 
+	.container{width: 1230px; } 
+	.three-col-fixed{width: 410px;} /* 3 Columns would be 410px */
+}
+
+/* 1366x768 	20% */
+@media (max-width: 1366px){ 
+	.container{width: 1170px;}
+	.three-col-fixed{width: 390px;} /* 3 Columns would be 390px */
+}
+	
+/* 1280x1024 	5.20% */
+@media (max-width: 1280px){ 
+	.container{width: 1020px;} 
+	.three-col-fixed{width: 340px;} /* 3 Columns would be 340px */
+}
+
+/* 1024x768 	12.06% */
+@media (max-width: 1024px){ 
+	.container{width: 960px;}
+	.three-col-fixed{width: 320px;} /* 3 Columns would be 320px */
+}
+	
+/* anything below 960 is Tablet vertical or phone -  768x1024 - 5.06% */
+@media (max-width: 960px){ 
+	.container{width: 100%;} 
+	.three-col-fixed{width: 100%;} 
+}

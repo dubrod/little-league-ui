@@ -1,0 +1,40 @@
+
+#masthead{
+	background-size: cover;
+	border-bottom: 1px solid $dark-gray;
+
+	.container{
+		display:flex;
+		flex-direction:row;
+
+		@include respond-to($tabletP){
+			flex-direction: column;
+		}
+
+		> div{
+			padding:2rem;
+			&:first-of-type{
+				width:40%;
+			}
+			&:last-of-type{
+				width:60%;
+				background-color: rgba(0,0,0,.35);
+			}
+			h2{
+				color: $primary;
+			}
+			p{
+				padding-top:1rem;
+				font-size:.9rem;
+				color:$white;
+			}
+			@include respond-to($tabletP){
+				&#logo{
+					text-align:center;
+					img{width:200px;}
+				}
+				&:first-of-type, &:last-of-type{width: 100%;}
+			}
+		}
+	}
+}

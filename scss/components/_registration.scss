@@ -1,0 +1,19 @@
+#registration{
+    h1{color: $primary;}
+
+    form{
+        padding: 1.5rem;
+        background-color: $natural;
+        border-radius: $radius;
+    }
+
+    aside{
+        p{font-size:.8rem;}
+        ul{
+            font-size:.8rem;
+            margin: 0 .5rem 1rem 1rem;
+        }
+
+    }
+
+}

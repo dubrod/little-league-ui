@@ -1,0 +1,233 @@
+
+<!DOCTYPE html >
+<html>
+<head>
+
+  <meta charset='UTF-8'/>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+  <meta name='robots' content='index'/>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <title>Style Guide | Layouts</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+  <link href='css/base.css' rel='stylesheet' />
+  <link href='../css/app.css' rel='stylesheet' />
+
+</head>
+<body class=' full'>
+<div class='page-content'>
+
+<div class='sg-header clearfix'>
+  <div class='limiter clearfix'>
+    <nav class='col12 text-right pad2y contain clearfix'>
+      <h4 class='main-title'>Style Guide</h4>
+      <div id='nav'>
+          <div class="z10 strong small pad0y">
+              <a href="index.html" class="primary-nav-button inline pad1x pad0y rounded">Base</a>
+              <a href="components.html" class="primary-nav-button inline pad1x pad0y rounded active">Components</a>
+              <a href="js.html" class="primary-nav-button inline pad1x pad0y rounded">JS</a>
+          </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<div class=''>
+
+<!--Fixed sidebar navigation-->
+<div class='docnav hide-mobile'>
+  <div class='limiter'><div class='col3 contain'>
+    <nav class='scroll-styled quiet-scroll'>
+      <div class='space-bottom'>
+        <h4 style="text-align:left;">Components</h4>
+      </div>
+
+      <div class='space-bottom1'>
+
+          <a href='components.html'>Grids</a>
+          <a href='layout.html' class='active'>Layout</a>
+          <a href='margins.html'>Margins</a>
+          <a href='padding.html'>Padding</a>
+          <a href='utilities.html'>Utilities</a>
+          <a href='flexbox.html'>Flex Box</a>
+
+      </div>
+    </nav>
+  </div></div>
+</div>
+
+<div class='limiter clearfix'>
+  <div class='pad2y'>
+    <nav class='contain z10 margin3 col9 fill-dark space-bottom rounded'>
+      <div class='col2 pad2'>
+        <strong>Layouts</strong>
+      </div>
+    </nav>
+  </div>
+  <div class='contain margin3 col9'>
+    <div class='doc'>
+
+
+        <div class='box round'>
+            <div class='box-heading pad2'>
+              <h3 class=''>Modular Widths</h3>
+              <p>Classes to build unique layouts.<br>
+              .quarter-width, .half-width, .three-quarter-width, .full-width</p>
+            </div>
+            <div class='pad2'>
+
+                <section class="clearfix">
+                    <div class="quarter-width bg-light-gray left">.quarter-width .left</div>
+                    <div class="quarter-width bg-light-gray right">.quarter-width .right</div>
+                </section>
+
+                <section class="clearfix mt1">
+                    <div class="half-width bg-light-gray left">.half-width .left</div>
+                    <div class="half-width bg-primary right">.half-width .right</div>
+                </section>
+                <section class="clearfix mt1">
+                    <div class="quarter-width bg-light-gray left">.quarter-width .left</div>
+                    <div class="three-quarter-width bg-primary right">.three-quarter-width .right</div>
+                </section>
+                <section class="mt1 full-width">
+                    <div class="gutter bg-primary">
+                        .full-width > .gutter
+                    </div>
+                </section>
+
+
+            </div>
+            <div class='round-bottom'>
+                <div class="highlight">
+                    <pre><code class="language-html" data-lang="html">
+    <span class="nt">&lt;section class="clearfix"&gt;</span>
+        <span class="nt">&lt;div class="quarter-width left"&gt;</span>.quarter-width .left<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div class="quarter-width right"&gt;</span>.quarter-width .right<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/section&gt;</span>
+    <span class="nt">&lt;section class="clearfix mt1"&gt;</span>
+        <span class="nt">&lt;div class="half-width left"&gt;</span>.half-width .left<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div class="half-width right"&gt;</span>.half-width .right<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/section&gt;</span>
+    <span class="nt">&lt;section class="clearfix mt1"&gt;</span>
+        <span class="nt">&lt;div class="quarter-width left"&gt;</span>.quarter-width .left<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div class="three-quarter-width right"&gt;</span>.three-quarter-width .right<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/section&gt;</span>
+    <span class="nt">&lt;section class="mt1 full-width"&gt;</span>
+        <span class="nt">&lt;div class="gutter"&gt;</span>.full-width > .gutter<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/section&gt;</span>
+                  </code></pre>
+              </div>
+          </div>
+        </div>
+
+
+
+
+        <div class='box round'>
+            <div class='box-heading pad2'>
+              <h3 class=''>Responsive Containers</h3>
+              <p>Classes to build unique layouts.<br>
+              .measure, .measure-wide, .measure-narrow, .wrap</p>
+            </div>
+            <div class='pad2'>
+
+                <section class="clearfix measure-wide wrap">
+                    <div class="gutter bg-primary">max-width: 60rem with .wrap to center</div>
+                </section>
+
+                <section class="clearfix measure wrap">
+                    <div class="gutter bg-dark-gray white">max-width: 48rem with .wrap to center</div>
+                </section>
+
+                <section class="clearfix measure-narrow wrap">
+                    <div class="gutter bg-light-gray">max-width: 32rem with .wrap to center</div>
+                </section>
+
+
+            </div>
+            <div class='round-bottom'>
+                <div class="highlight">
+                    <pre><code class="language-html" data-lang="html">
+        <span class="nt">&lt;section class="clearfix measure-wide wrap"&gt;</span>
+            <span class="nt">&lt;div class="gutter"&gt;</span>max-width: 60rem with .wrap to center<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/section&gt;</span>
+        <span class="nt">&lt;section class="clearfix measure wrap"&gt;</span>
+            <span class="nt">&lt;div class="gutter"&gt;</span>max-width: 48rem with .wrap to center<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/section&gt;</span>
+        <span class="nt">&lt;section class="clearfix measure-narrow wrap"&gt;</span>
+            <span class="nt">&lt;div class="gutter"&gt;</span>max-width: 32rem with .wrap to center<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/section&gt;</span>
+                  </code></pre>
+              </div>
+          </div>
+        </div>
+
+
+
+        <div class='box round'>
+            <div class='box-heading pad2'>
+              <h3 class=''>Mobile Block</h3>
+              <p>Class to force mobile friendly containers.<br>
+              .mobile-block, .tablet-block</p>
+            </div>
+            <div class='pad2'>
+
+                <section class="clearfix mobile-block">
+                    <div class="gutter bg-primary">.mobile-block</div>
+                </section>
+
+            </div>
+            <div class='round-bottom'>
+                <div class="highlight">
+                    <pre><code class="language-html" data-lang="html">
+        <span class="nt">.mobile-block{</span>
+            display: block !important;
+            width: 100% !important;
+        <span class="nt">}</span>
+                  </code></pre>
+              </div>
+          </div>
+        </div>
+
+
+
+        <div class='box round'>
+            <div class='box-heading pad2'>
+              <h3 class=''>Mobile Base</h3>
+              <p>Class to force mobile friendly gutter.<br>
+              .mobile-base, .tablet-base</p>
+            </div>
+            <div class='pad2'>
+
+                <section class="clearfix mobile-base">
+                    <div class="gutter bg-primary">.mobile-base</div>
+                </section>
+
+            </div>
+            <div class='round-bottom'>
+                <div class="highlight">
+                    <pre><code class="language-html" data-lang="html">
+        <span class="nt">.mobile-base{</span>
+           margin: 1rem !important;
+      	     padding: 1rem !important;
+        <span class="nt">}</span>
+                  </code></pre>
+              </div>
+          </div>
+        </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+</div>
+</body>
+</html>

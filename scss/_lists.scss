@@ -1,0 +1,39 @@
+// Lists
+
+ul{
+    margin-left: 1.5rem;
+    list-style-type: disc;
+
+    li{
+        ul{
+            margin-left: 1rem;
+        }
+    }
+}
+
+ol{
+    margin-left: 1rem;
+    list-style: decimal;
+	li{
+		ol{
+            margin-left: 1rem;
+        }
+	}
+}
+
+
+// Simple unbulleted list
+.list-simple {
+  list-style: none;
+  padding-left: 0;
+}
+
+// Inline list
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+  li {
+    display: inline;
+    white-space: nowrap;
+  }
+}

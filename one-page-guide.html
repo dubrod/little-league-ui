@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MODX Sith Workflow - Base</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:400,400italic,600" rel="stylesheet">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="build/css/app.css" />
+
+</head>
+<body>
+<header role="banner" class="full-width bg-light-gray" style="height:auto;">
+  <button id="mobile-menu"></button>
+  <nav role="navigation">
+  <ul role="menu" aria-label="Main menu">
+    <li role="menuitem"><a href="" id="home-link" class="">Home</a></li>
+	<li role="menuitem"><a href="#layout" class="">Layout</a></li>
+	<li role="menuitem"><a href="#buttons" class="">Buttons</a></li>
+	<li role="menuitem"><a href="#forms" class="">Forms</a></li>
+	<li role="menuitem"><a href="#components" class="">Components</a></li>
+	<li role="menuitem"><a href="#theme" class="">Theme</a></li>
+  </ul>
+  </nav>
+</header>
+
+  <div class="center mt4">
+
+    <div class="px1 mt4 center">
+      <div class="inline-block mb1 dark transition-all pulsate">
+          <div id="device_icon" class="fa"></div>
+        <div><p class="small">User Agent: <span id="user_agent"></span></p></div>
+      </div>
+      <h1 class="h1 caps mb0">MODX</h1>
+      <p class="p caps">Standard CSS Framework<br><br>
+	      <a href="#!" class="js-toggle-baseline button button-small button-gray">Show Baseline</a>
+      </p>
+
+    </div>
+  </div>
+
+  <main role="main" class="px-responsive py-responsive js-baseline js-outline">
+
+      <div class="flex--container flex--dir-row">
+  	  	<div class="flex--col-3">
+  		  	<div class="bg-light-gray rounded2 mobile-base">
+  		  		<div class="block center"><span class="icon icon-camera med-icon"></span></div>
+  		  		<p class="center phalf small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+  		  	</div>
+  	  	</div>
+  	  	<div class="flex--col-3">
+  		  	<div class="bg-light-gray rounded2 mobile-base">
+  		  		<div class="block center"><span class="icon icon-download med-icon"></span></div>
+  		  		<p class="center phalf small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+  		  	</div>
+  	  	</div>
+  	  	<div class="flex--col-3">
+  		  	<div class="bg-light-gray rounded2 mobile-base">
+  		  		<div class="block center"><span class="icon icon-camera med-icon"></span></div>
+  		  		<p class="center phalf small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+  		  	</div>
+  	  	</div>
+  	  	<div class="flex--col-3">
+  		  	<div class="bg-light-gray rounded2 mobile-base">
+  		  		<div class="block center"><span class="icon icon-camera med-icon"></span></div>
+  		  		<p class="center phalf small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+  		  	</div>
+  	  	</div>
+    	</div>
+
+    <section class="measure-wide wrap">
+
+      <!-- Typography
+      ================================================== -->
+
+        <!-- Headings -->
+
+        <div class="mp-grid">
+          <div class="mp-3">
+              <h1>Heading 1</h1>
+              <h2>Heading 2</h2>
+              <h3>Heading 3</h3>
+              <h4>Heading 4</h4>
+              <h5>Heading 5</h5>
+              <h6>Heading 6</h6>
+          </div>
+          <div class="mp-3">
+              <h2>Example body text</h2>
+              <p>Nullam quis risus eget <a href="#">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+              <p><small>This line of text is meant to be &lt;small&gt; print.</small></p>
+              <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+              <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+              <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+          </div>
+          <div class="mp-3">
+              <h2>Emphasis classes</h2>
+              <p class="text-muted">This is class text-muted.</p>
+              <p class="text-primary">This is class text-primary.</p>
+              <p class="text-warning">This is class text-warning.</p>
+              <p class="text-danger">This is class text-danger.</p>
+              <p class="text-success">This is class text-success.</p>
+              <p class="text-info">This is class text-info.</p>
+          </div>
+        </div>
+
+
+        <!-- Blockquotes -->
+
+        <h2 class="mt2">Blockquote</h2>
+              <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. nteger posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+              </blockquote>
+
+    <h2 class="mt2">Horizontal Line</h2>
+    <small>&lt;hr&gt;</small>
+    <hr>
+
+    <!-- eof typography -->
+    </section>
+
+    <section id="layout" class="measure-wide wrap py-responsive">
+        <h1 class="h2 mb0">Layout Utilities</h1>
+        <p class="p mb2">Control whitespace, floats, display, positioning and more.</p>
+
+        <div class="center m1 p1 bg-light-gray rounded">
+          <h2 class="bg-dark-gray white mb0">1rem Padding</h2>
+        </div>
+
+		<div class="oh mt2 mb1">
+        	<div class="h2 left p2 mr2 bold white bg-blue rounded">left</div>
+	        <div class="oh bg-light-gray p1">
+	          <h2 class="p mb1">Normal Div</h2>
+	          <p class="p">Using simple layout utilities</p>
+	        </div>
+		</div>
+
+		<div class="clearfix mb0">
+        	<div class="left p1 bg-light-gray">Left</div>
+			<div class="right p1 bg-light-gray">Right</div>
+			<div class="oh bold p1 bg-blue">Flexible center</div>
+		</div>
+    </section>
+
+
+
+    <section id="buttons" class="measure-wide wrap py-responsive">
+      <h1 class="h2 mb0">Buttons <span class="light-gray">.button</span></h1>
+      <p class="p mb2">Three sizes for anchor links, submit inputs, and button elements</p>
+
+      <form class="mb2">
+        <a href="#!" class="button button-blue mr1">Anchor Link Button</a>
+        <input type="submit" class="button button-blue mr1" value="Input Submit Button">
+        <button class="button button-blue mr1">Button Element</button>
+        <br>
+        <button class="button block mt1 button-blue mr1 hover-shadow">Button Element with Hover Shadow</button>
+        <br>
+        <button class="button block mt1 button-blue mr1 hover-glow">Button Element with Hover Glow</button>
+
+      </form>
+      <div class="mb2">
+        <a href="#!" class="button button-big button-blue mr1">.button-big</a>
+        <a href="#!" class="button button-small button-blue">.button-small</a>
+      </div>
+
+        <a href="#!" class="button button-gray">.button-gray</a>
+        <a href="#!" class="button button-dark">.button-dark</a>
+
+    </section>
+
+
+
+    <section id="forms" class="measure-narrow wrap py-responsive">
+    <span class="light-gray">div.measure-narrow</span>
+      <h1 class="h2 mb0">Forms</h1>
+      <p class="p mb2">Structural styles keep everything lined up</p>
+      <form class="form mb2 form-light">
+        <h2 class="p">Inline Form (with .mobile-block state)</h2>
+        <input type="text" class="mr1 mb1 mobile-block" placeholder="Email Address">
+        <input type="text" class="mr1 mb1 mobile-block" placeholder="Password">
+        <input type="submit" class="button button-blue mobile-block" value="Sign In">
+      </form>
+      <form class="clearfix mb2 form form-stacked form-light">
+        <h2 class="p">Stacked Form</h2>
+          <label>Email Address:</label>
+          <input type="text" placeholder="Email Address">
+          <label>Password:</label>
+          <input type="text" placeholder="Password">
+          <label>Select:</label>
+          <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+          <div class="input-wrapper">
+              <label for="radio-1"> <input name="radios" id="radio-1" type="radio"> <span>Radio 1</span> </label>
+              <label for="radio-2"> <input name="radios" id="radio-2" type="radio"> <span>Radio 2</span> </label>
+              <label for="radio-3"> <input name="radios" id="radio-3" type="radio"> <span>Radio 3</span> </label>
+              <label for="checkbox-1"> <input id="checkbox-1" type="checkbox"> <span>Checkbox</span> </label>
+          </div>
+          <input type="submit" class="button button-blue mr1" value="Sign In">
+          <input type="submit" class="button button-gray" value="Cancel">
+      </form>
+    </section>
+
+    <section id="components" class="measure-wide wrap py-responsive">
+      <h1 class="h2 mb0">Components</h1>
+      <p class="p mb2">Create a variety of components without writing any new CSS</p>
+
+
+      <div class="clearfix leading-3 mb1 bg-light-gray">
+        <div class="left px1 p bold leading-3">Pseudo Nav bar</div>
+        <div class="right px1">
+          <a href="#!">Right</a>
+          <a href="#!" class="button button-small button-gray ml1">Button</a>
+        </div>
+      </div>
+
+      <div class="clearfix p1 mb1 bg-light-gray rounded">
+        <h2 class="h3">Pagination</h2>
+        <ul class="list-simple list-inline center leading-3">
+          <li><a href="#!" class="inline-block px1">Previous</a></li>
+          <li><a href="#!" class="inline-block px1 mid-gray">1</a></li>
+          <li><a href="#!" class="inline-block px1">2</a></li>
+          <li><a href="#!" class="inline-block px1">3</a></li>
+          <li><a href="#!" class="inline-block px1">4</a></li>
+          <li><a href="#!" class="inline-block px1">5</a></li>
+          <li><a href="#!" class="inline-block px1">Next</a></li>
+        </ul>
+      </div>
+
+      <h2 class="h3">Multi-Purpose Grid with preset gutter</h2>
+      <section class="mp-grid">
+	  	<div class="mp-2 bg-t-blue">.mp-2</div>
+	  	<div class="mp-2 bg-light-gray">.mp-2</div>
+	  	<div class="mp-2 bg-t-blue">.mp-2</div>
+        <div class="mp-2 bg-light-gray">.mp-2</div>
+	  	<div class="mp-2 bg-light-gray">.mp-2</div>
+	  	<div class="mp-2 bg-t-blue">.mp-2</div>
+        <div class="mp-2 bg-light-gray">.mp-2</div>
+	  	<div class="mp-2 bg-t-blue">.mp-2</div>
+        <div class="mp-2 bg-t-blue">.mp-2</div>
+      </section>
+
+      <section class="mp-grid">
+	  	<div class="mp-3 bg-light-gray">.mp-3</div>
+	  	<div class="mp-3 bg-t-blue">.mp-3</div>
+	  	<div class="mp-3 bg-light-gray">.mp-3</div>
+        <div class="mp-3 bg-light-gray">.mp-3</div>
+	  	<div class="mp-3 bg-t-blue">.mp-3</div>
+	  	<div class="mp-3 bg-light-gray">.mp-3</div>
+        <div class="mp-3 bg-t-blue">.mp-3</div>
+	  	<div class="mp-3 bg-light-gray">.mp-3</div>
+      </section>
+
+      <section class="mp-grid">
+	  	<div class="mp-4 bg-t-blue">.mp-4</div>
+	  	<div class="mp-4 bg-t-blue">.mp-4</div>
+	  	<div class="mp-4 bg-t-blue">.mp-4</div>
+	  	<div class="mp-4 bg-t-blue">.mp-4</div>
+	  	<div class="mp-4 bg-t-blue">.mp-4</div>
+	  	<div class="mp-4 bg-t-blue">.mp-4</div>
+        <div class="mp-4 bg-t-blue">.mp-4</div>
+	  	<div class="mp-4 bg-t-blue">.mp-4</div>
+	  	<div class="mp-4 bg-t-blue">.mp-4</div>
+      </section>
+
+	  <section class="mp-grid">
+	  	<div class="mp-5 bg-light-gray">.mp-5</div>
+	  	<div class="mp-5 bg-light-gray">.mp-5</div>
+	  	<div class="mp-5 bg-t-blue">.mp-5</div>
+	  	<div class="mp-5 bg-light-gray">.mp-5</div>
+	  	<div class="mp-5 bg-light-gray">.mp-5</div>
+	  	<div class="mp-5 bg-t-blue">.mp-5</div>
+	  	<div class="mp-5 bg-light-gray">.mp-5</div>
+        <div class="mp-5 bg-light-gray">.mp-5</div>
+	  	<div class="mp-5 bg-t-blue">.mp-5</div>
+	  	<div class="mp-5 bg-light-gray">.mp-5</div>
+        <div class="mp-5 bg-light-gray">.mp-5</div>
+	  	<div class="mp-5 bg-t-blue">.mp-5</div>
+	  	<div class="mp-5 bg-light-gray">.mp-5</div>
+      </section>
+
+      <section class="mp-grid">
+          <div class="mp-2 bg-t-blue">
+              <div class="mp-2 bg-light-gray">.mp-2 inside .mp-2</div>
+              <div class="mp-2 bg-light-gray">.mp-2 inside .mp-2</div>
+          </div>
+      </section>
+
+
+      <div class="relative mt2 p2 mb1 bg-light-gray rounded">
+        <h2 class="h3 p4 center">Position anything</h2>
+        <p class="absolute t0 l0 p1 mid-gray">Top left</p>
+        <p class="absolute r0 b0 p1 mb0 mid-gray">Bottom right</p>
+      </div>
+
+      <div class="clearfix">
+      	<h3>Lists</h3>
+
+      	<div class="third-width left">
+      		<ul>
+      		<li>Standard UL</li>
+      		<li>Standard UL</li>
+      		<li>Standard UL</li>
+	  		</ul>
+      	</div>
+      	<div class="third-width left">
+	      	<ul class="list-style-disc ml2">
+	      		<li>UL with .list-style-disc</li>
+	      		<li>UL with .list-style-disc</li>
+	      		<li>UL with .list-style-disc</li>
+	      	</ul>
+      	</div>
+      	<div class="third-width left">
+      		<ol class="px1 list-style-nums ml2">
+      		<li>OL .list-style-nums</li>
+      		<li>OL .list-style-nums</li>
+      		<li>OL .list-style-nums</li>
+	  		</ol>
+      	</div>
+      </div>
+
+      <h3 class="mt2">Tables</h3>
+      <table cellspacing="0" cellpadding="0">
+            <tbody>
+                <tr>
+                    <td data-label="">Account Type</td>
+                    <td data-label="">Dividend Rate</td>
+                    <td data-label="">APY</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table cellspacing="0" cellpadding="0">
+              <thead>
+                  <tr>
+                      <th>Classic Checking</th>
+                      <th>0.05%</th>
+                      <th>0.05%</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td data-label="" colspan="3">
+                          Minimum Balance<br>
+                          • No Minimum to open<br>
+                          • *$500 each day to avoid service charge<br>
+                          • *$500 average daily balance to obtain disclosed APY • Dividends are paid monthly
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+
+          <table cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                        <th>Secondary Classic Checking</th>
+                        <th>0.05%</th>
+                        <th>0.05%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="" colspan="3">
+                            Minimum Balance<br>
+                            • No Minimum to open<br>
+                            • *$500 each day to avoid service charge<br>
+                            • *$500 average daily balance to obtain disclosed APY • Dividends are paid monthly
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+    </section>
+
+    <section id="theme" class="measure wrap py-responsive">
+      <h1 class="h2 mb0">Themes</h1>
+      <p class="p">Separation of structure and skin to quickly customize the look and feel</p>
+      <div class="h3 bold oh white rounded">
+
+        <div class="p1 center bg-primary">.bg-primary</div>
+        <div class="p1 center bg-secondary">.bg-secondary</div>
+        <div class="p1 center bg-natural dark-gray">.bg-natural (text .dark-gray)</div>
+        <div class="p1 center bg-dark-gray white">.bg-dark-gray (text .white)</div>
+        <div class="p1 center bg-mid-gray white">.bg-mid-gray (text .white)</div>
+        <div class="p1 center bg-light-gray black">.bg-light-gray (text .black)</div>
+        <div class="p1 center bg-dark-blue">.bg-dark-blue</div>
+        <div class="p1 center bg-blue">.bg-blue</div>
+        <div class="p1 center bg-t-blue">.bg-t-blue</div>
+        <div class="p1 center bg-green">.bg-green</div>
+        <div class="p1 center bg-t-green">.bg-t-green</div>
+        <div class="p1 center bg-orange">.bg-orange</div>
+        <div class="p1 center bg-t-orange">.bg-t-orange</div>
+        <div class="p1 center bg-red">.bg-red</div>
+        <div class="p1 center bg-t-red">.bg-t-red</div>
+        <div class="p1 center bg-almost-white dark-gray">.bg-almost-white (text .dark-gray)</div>
+
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="build/js/app.min.js"></script>
+  <script>
+	  $(document).ready(function(){
+
+      //show/hide the baseline svg
+      var isBaselined = false,
+          $baselineButton = $('.js-toggle-baseline');
+      $baselineButton.click(function(){
+        if(isBaselined){
+          $baselineButton.removeClass('button-blue').addClass('button-gray').html('Show Baseline');
+          $('.js-baseline').removeClass('show-baseline');
+          $('.js-outline').removeClass('show-outline');
+        } else {
+          $baselineButton.removeClass('button-gray').addClass('button-blue').html('Hide Baseline');
+          $('.js-baseline').addClass('show-baseline');
+          $('.js-outline').addClass('show-outline');
+        }
+        isBaselined = !isBaselined;
+      });
+      // eof show/hide baseline svg
+
+    });
+  </script>
+
+<footer role="contentinfo"></footer>
+</body>
+</html>

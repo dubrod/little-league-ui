@@ -1,0 +1,27 @@
+// this will be things like fades and animations
+// button hover effects (not included) http://tympanus.net/Development/CreativeButtons/
+// icon hover effects (not included) http://tympanus.net/Development/IconHoverEffects/
+// link hover effects (not included) http://tympanus.net/Development/CreativeLinkEffects/
+
+@mixin touch-scroll($direction:x,$scroll:auto) {
+    @if $direction { $direction: "-#{$direction}"; }
+    overflow#{$direction}:#{$scroll};
+    -webkit-overflow-scrolling: touch;
+}
+
+//anything you change on hover will fade in
+@mixin fade-ease{
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	-webkit-backface-visibility: hidden;
+}
+
+@mixin hover-shadow($color){
+	box-shadow: 0px 2px 3px 3px $color;
+}
+
+@mixin hover-glow($color){
+	box-shadow: 0px 0px 3px 3px $color;
+}

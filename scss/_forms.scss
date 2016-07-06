@@ -1,0 +1,107 @@
+// Forms
+.error { color: $red; font-style: italic;}
+
+fieldset{margin: 0; padding: 0; border: none;}
+
+form select.inline,form input[type="text"].inline{display:inline !important; width: auto;}
+
+@include respond-to-above($tabletP){
+    .input-small{width: 50% !important;}
+}
+
+.form {
+      font-size: 1rem;
+      label{
+          min-width: 10rem;
+          display: inline-block;
+      }
+      .input-wrapper{
+          margin-bottom: 1rem;
+      }
+}
+
+input[type="text"],input[type="password"] {
+  appearance: none;
+  border-style: solid;
+  border-width: 1px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+  height: 2rem;
+  line-height: 1rem;
+  padding: .5rem;
+  border-radius: $radius;
+}
+
+select {
+  box-sizing: border-box;
+  height: 2rem;
+  margin-right: 0;
+  margin-left: 0;
+  border-radius: $radius;
+  padding-right: 1rem;
+}
+
+textarea {
+  box-sizing: border-box;
+  padding: .5rem;
+  border-style: solid;
+  border-width: 1px;
+  line-height: 1.5rem;
+  border-radius: $radius;
+}
+
+.form-stacked {
+  label{
+      padding:.25rem;
+      .error{float:right;}
+  }
+  label,
+  input[type="text"],
+  input[type="password"],
+  select,
+  textarea {
+    display: block;
+    width: 100%;
+  }
+  input[type="text"],
+  input[type="password"],
+  select,
+  .input-wrapper{
+    margin-bottom: 1rem;
+  }
+}
+
+//HACKS
+//get radios and checkboxes to match on all browsers
+input[type="radio"], input[type="radio"] + span ,input[type="checkbox"],input[type="checkbox"] + span{vertical-align: middle;}
+
+// Light
+.form-light {
+  input[type="text"],
+  input[type="password"],
+  textarea,
+  select {
+    transition: box-shadow .2s ease;
+    color: $dark-gray;
+    border-color: darken($light-gray, 5%);
+    background-color: #fafbfc;
+    &:focus {
+      outline: none;
+      border-color: $primary;
+      background-color: darken(#fafbfc, 1%);
+      box-shadow: 0 0 .125rem rgba($mid-gray,.7);
+    }
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+
+    &:focus {
+      outline: none;
+    }
+  }
+  input[type="radio"] {
+    border-radius: 50%;
+  }
+}
