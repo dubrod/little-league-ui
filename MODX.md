@@ -120,6 +120,7 @@ The Group Game Schedules are easily created in a table. Just copy and paste this
 
 ### Reports
 
-> There are some basic reports like Apparel #'s
+> There are some basic reports like Apparel #'s and D.O.B. table
 
 1. http://little-league.in.modxcloud.com/apparel-order.html
+2. http://little-league.in.modxcloud.com/league-stats.html
