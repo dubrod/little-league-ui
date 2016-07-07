@@ -129,7 +129,8 @@ The Group Game Schedules are easily created in a table. Just copy and paste this
 
 ### Reports
 
-> There are some basic reports like Apparel #'s and D.O.B. table
+> There are some basic reports like Apparel #'s, D.O.B. table, and Paid Stats
 
 1. http://little-league.in.modxcloud.com/apparel-order.html
 2. http://little-league.in.modxcloud.com/league-stats.html
+3. http://little-league.in.modxcloud.com/paid-stats.html - Registration sets `paid = no` so anything you put in the `paid` field value other than that will count as paid
